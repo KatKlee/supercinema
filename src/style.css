@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(125, 0, 38);
+  color: rgb(255, 50, 50);
+  text-align: center;
+  padding: 40px 0;
+}
+
+a {
+  color: rgb(255, 50, 50);
+  text-decoration: none;
+  font-size: 0.6em;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: rgb(250, 0, 167);
+}
+
+/* ---------------------------- Home ---------------------------- */
+
+.seatStyle {
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: rgb(255, 50, 50);
+
+}
+
+.seatlist {
+  margin: 20px auto;
+  width: 35%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 25px;
+}
+
+
+.loge {
+  background-color: rgb(250, 0, 167);
+}
+
+.leinwand {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  margin: 0 auto;
+  width: 95%;
+  background-color: rgb(255, 50, 50);
+  color: rgb(125, 0, 38);
+  font-size: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px;
+  opacity: 0.2;
+}
+
+.true {
+  opacity: 0.2;
+}
+
+/* Buchungsbutton Kunde */
+.bookButton {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 80px;
+  border-style: none;
+  background-color: rgb(255, 50, 50);
+  color: rgb(125, 0, 38);
+  font-size: 1em;
+  text-align: center;
+}
+
+.bookButton:hover {
+  background-color: rgb(250, 0, 167);
+  ;
+}
+
+/* ---------------------------- Admin Dashboard ---------------------------- */
+
+.dashboardSection {
+  margin: 50px 0;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+/* Resetbutton Admin */
+.resetButton {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 80px;
+  border-style: none;
+  background-color: rgb(255, 50, 50);
+  color: rgb(125, 0, 38);
+  font-size: 1em;
+  text-align: center;
+}
+
+.resetButton:hover {
+  background-color: rgb(250, 0, 167);
+  ;
+}
