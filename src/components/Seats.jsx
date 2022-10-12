@@ -20,6 +20,7 @@ const Seats = () => {
                     <Seat
                         key={item.id}
                         category={item.category.toLowerCase()}
+                        seatnumber={item.id}
                     />
                 )}
             </section>

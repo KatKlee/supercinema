@@ -6,18 +6,19 @@ const Seat = (props) => {
     const changeBooking = () => {
         setState(!state)
 
-        /* fetch('http://localhost:7777/seats', {
-            method: 'PUT', 
-            
-            – lieber POST? da ich das gelesen habe:
-            "If you send the same PUT request multiple times, the result will remain the same"
-            – Das wäre doch hinderlich wenn wir booken/entbooken
+        const seatID = props.seatnumber
+        console.log(seatID)
+        console.log(JSON.stringify({ id: seatID }))
 
-            body: JSON.stringify(state:!state)?
-            headers: ist hier default gesetzt, der für unseren Fall (boolean) schon gegeben ist?
-        }) */
-        //  .then(res => res.status(200).json(state))
-        //  .catch(res => res.status(500).send({message: changing of booking failed}))
+        fetch('http://localhost:7777/seats', {
+            method: 'PUT',
+            body: JSON.stringify({ id: seatID }),
+            headers: { 'Content-Type': 'application/json' }
+        })
+            .then(res => res.status(200).json())
+            .catch(res => res.status(500).send({ message: 'changing of booking failed' }))
+        console.log('Fetch hat geklappt')
+
     }
     return (
         <div className={`seatStyle ${props.category} ${!state ? 'true' : null}`} onClick={changeBooking}></div >

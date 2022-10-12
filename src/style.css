@@ -112,3 +112,15 @@ a:hover {
   background-color: rgb(250, 0, 167);
   ;
 }
+
+
+/* Emailform */
+
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: 10px;
+}
