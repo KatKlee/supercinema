@@ -2,7 +2,7 @@ const BookButton = (props) => {
 
     const sendData = () => {
         fetch('http://localhost:7777/api/mail', {
-            method: 'POST', body: JSON.stringify(props.clientData),
+            method: 'POST',
             body: JSON.stringify(props.clientData),
             headers: { 'Content-Type': 'application/json' }
         })

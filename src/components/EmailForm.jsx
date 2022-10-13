@@ -1,4 +1,5 @@
 import { useState } from "react"
+import BookButton from "./BookButton"
 
 const EmailForm = () => {
 
@@ -15,11 +16,12 @@ const EmailForm = () => {
 
     return (
         <>
-            <form className="emailForm" onChange={(e) => updateData(e)} clientData={clientData}>
+            <form className="emailForm" onChange={(e) => updateData(e)} >
                 <input type="text" name="firstname" id="" placeholder="Vorname" />
                 <input type="text" name="lastname" id="" placeholder="Nachname" />
                 <input type="email" name="email" id="" placeholder="example@mail.com" />
             </form>
+            <BookButton clientData={clientData} />
         </>
     )
 }
